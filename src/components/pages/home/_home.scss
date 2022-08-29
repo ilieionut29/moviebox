@@ -1,0 +1,60 @@
+.movies {
+  &-box {
+    padding: 0 24px;
+    max-width: 1368px;
+    margin: 70px auto;
+
+    @media (max-width: 768px) {
+      margin: 35px auto;
+    }
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 35px 0;
+
+    @media (max-width: 768px) {
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &-title {
+    font-size: 36px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    color: #000000;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &-link {
+    font-size: 18;
+    display: flex;
+    align-items: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: #be123c;
+    line-height: 25px;
+
+    svg {
+      font-size: 24;
+      color: #be123c;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+
+      svg {
+        font-size: 18;
+      }
+    }
+  }
+}

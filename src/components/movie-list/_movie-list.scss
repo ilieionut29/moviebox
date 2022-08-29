@@ -1,0 +1,131 @@
+.movie {
+  &-card {
+    &:hover {
+      .movie-bk {
+        filter: brightness(0.3);
+      }
+
+      .movie-play {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-bk {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+
+    @media (max-width: 768px) {
+      height: 270px;
+    }
+  }
+
+  &-bk-box {
+    position: relative;
+  }
+
+  &-play {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    svg {
+      font-size: 40px;
+      color: #eb5353;
+    }
+  }
+
+  &-info {
+    font-size: 12px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #9ca3af;
+    text-transform: uppercase;
+    line-height: 16px;
+    margin: 6px 0 12px 0;
+
+    @media (max-width: 375px) {
+      margin: 6px 0;
+    }
+  }
+
+  &-name {
+    font-size: 18;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    color: #111827;
+    height: 50px;
+    overflow: hidden;
+
+    @media (max-width: 375px) {
+      font-size: 16;
+      line-height: 20px;
+      height: 40px;
+    }
+  }
+
+  &-rate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px 0 0 0;
+
+    .note {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 12px;
+      color: #111827;
+
+      .imdb {
+        font-size: 12px;
+        background: #e6b91d;
+        font-family: 'DM Sans';
+        font-weight: 700;
+        padding: 3px 5px;
+        border-radius: 4px;
+        text-align: center;
+        margin-right: 6px;
+      }
+    }
+
+    .liked {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 12px;
+      color: #111827;
+
+      @media (max-width: 375px) {
+        display: none;
+      }
+
+      svg {
+        font-size: 16;
+        margin: 0 0 0 4px;
+        color: #b22727;
+      }
+
+      &.popular svg {
+        color: #5fd068;
+      }
+    }
+  }
+}

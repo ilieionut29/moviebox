@@ -1,0 +1,28 @@
+.movie-catalog {
+  &-header {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 20px 0;
+
+    @media (max-width: 768px) {
+      height: 150px;
+    }
+
+    span {
+      font-size: 18;
+      font-family: 'DM Sans';
+      font-weight: 700;
+      line-height: 12px;
+      color: white;
+      text-align: center;
+      padding: 120px 0 0 0;
+      display: block;
+
+      @media (max-width: 768px) {
+        padding: 80px;
+      }
+    }
+  }
+}
