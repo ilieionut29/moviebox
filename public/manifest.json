@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "movie-app",
+  "name": "all movies in one place",
+  "description": "all movies in one place",
+  "author": "www.jonu.dev",
   "icons": [
     {
       "src": "favicon.ico",

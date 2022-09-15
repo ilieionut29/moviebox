@@ -1,6 +1,6 @@
 {
-  "name": "react-movie-app",
-  "version": "0.1.0",
+  "name": "movie-app",
+  "author": "www.jonu.dev",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
