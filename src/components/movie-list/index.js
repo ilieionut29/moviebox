@@ -34,7 +34,9 @@ const MovieList = (props) => {
 
       setItems(response.results);
     };
-    getList();
+    setTimeout(() => {
+      getList();
+    }, 2000);
   }, [props.category, props.id, props.type]);
 
   return (
