@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       <div className='footer-copyright'>
-        © 2021 MovieBox by
+        © 2021 MovieBox by{' '}
         <a href='https://www.jonu.dev' rel='noopener noreferrer'>
           jonu.dev
         </a>

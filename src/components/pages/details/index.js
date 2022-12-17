@@ -13,7 +13,6 @@ import './_details.scss';
 const Details = () => {
   const { category, id } = useParams();
   const [item, setItem] = useState(null);
-
   const [casts, setCasts] = useState([]);
 
   useEffect(() => {

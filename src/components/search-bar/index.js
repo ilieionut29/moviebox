@@ -13,7 +13,7 @@ const SearchBar = (props) => {
 
   const goToSearch = useCallback(() => {
     if (keyword.trim().length > 0) {
-      history(`/${selectedOption}/search/${keyword}`); // to do
+      history(`/${selectedOption}/search/${keyword}`);
     }
   }, [keyword, history, selectedOption]);
 
